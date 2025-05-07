@@ -494,7 +494,7 @@ fn user_tree(root: String) -> Tree<String> {
 
 fn main() {
     // Force the user to enter a root node
-    let root = read_node("Please enter root node: ");
+    let root = read_node("Please enter root node or 'AUTO' for automatic testing: ");
 
     let mut tree = if root == "AUTO" {
         let nodes = [
